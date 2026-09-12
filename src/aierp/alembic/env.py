@@ -10,6 +10,7 @@ from aierp.db import Base
 from aierp.stage1_ingest import models as stage1_models  # noqa: F401
 from aierp.stage2_extraction import models as stage2_models  # noqa: F401
 from aierp.stage3_validation import models as stage3_models  # noqa: F401
+from aierp.stage4_counterparty import models as stage4_models  # noqa: F401
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
