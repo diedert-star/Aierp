@@ -12,6 +12,7 @@ from aierp.db import Base
 
 # import every stage's models so they register on Base.metadata before create_all
 from aierp.stage1_ingest import models as _stage1_models  # noqa: F401
+from aierp.stage2_extraction import models as _stage2_models  # noqa: F401
 
 TEST_DATABASE_URL = "postgresql+psycopg://aierp:aierp@127.0.0.1:5432/aierp_test"
 
