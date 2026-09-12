@@ -5,6 +5,7 @@ from sqlalchemy import engine_from_config, pool
 
 from aierp.config import settings
 from aierp.db import Base
+from aierp.pipeline import models as pipeline_models  # noqa: F401
 
 # import every stage's models so they register on Base.metadata
 from aierp.stage1_ingest import models as stage1_models  # noqa: F401

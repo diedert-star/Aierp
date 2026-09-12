@@ -1,11 +1,11 @@
 from fastapi import FastAPI
 
-from aierp.stage1_ingest.router import router as ingest_router
+from aierp.pipeline.router import router as documents_router
 
 
 def create_app() -> FastAPI:
     app = FastAPI(title="aierp invoice intake")
-    app.include_router(ingest_router)
+    app.include_router(documents_router)
     return app
 
 

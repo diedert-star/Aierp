@@ -9,6 +9,7 @@ from sqlalchemy.orm import Session, sessionmaker
 from aierp.blob_store.local import LocalFilesystemBlobStore
 from aierp.blob_store.protocol import BlobStore
 from aierp.db import Base
+from aierp.pipeline import models as _pipeline_models  # noqa: F401
 
 # import every stage's models so they register on Base.metadata before create_all
 from aierp.stage1_ingest import models as _stage1_models  # noqa: F401
